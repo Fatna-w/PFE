@@ -21,21 +21,48 @@ $result = mysqli_query($conn, $query);
     <div>
         <img src="images/chairs.png" class="product">
     </div>
+    <style>
+        .par{
+            margin-inline-start:63%;
+            text-align: center;
+            font-size: 15px;
+            font-family: cursive;
 
-    <div class="product-img">
-        <?php
-        if ($result) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                echo '<a href=""><img src="chairs/chair1.jpg" alt=""></a>';
-                echo '<div class="description">';
-                echo '<p>' . $row['description'] . '<br><br>' . $row['prix'] . '</p>';
-                echo '</div>';
-                
-            }
-            mysqli_free_result($result);
+           
         }
-        ?>
+        .product-img{
+            margin-left: -12%;
+           
+        }
+    </style>
+   
+
+<div class="product-img">
+    <div class="container">
+        <div class="row">
+    <?php
+    if ($result) {
+        $count = 0;
+        while ($row = mysqli_fetch_assoc($result)) {
+            if ($count % 3 == 0) {
+                echo '<div class="row">';
+            }
+            echo '<div class="col-sm-4">';
+            echo '<a href=""><img src="chairs/'. $row['img'] . '" alt=""></a>';
+            echo '<p class="par">' . $row['description'] . '<br><br>' . $row['prix'] . '</p>';
+            echo '</div>';
+            $count++;
+            if ($count % 3 == 0) {
+                echo '</div>';
+            }
+        }
+        mysqli_free_result($result);
+    }
+    ?>
     </div>
+</div>
+</div>
+<br>
 
     <div class="menu-product">
         <ul class="menu">
@@ -43,6 +70,7 @@ $result = mysqli_query($conn, $query);
             <li><a href="chairs.php">CHAIRS</a></li>
             <li><a href="lights.php">LIGHTS</a></li>
             <li><a href="acces.php">ACCES</a></li>
+            <br>
             <br>
             
         </ul>

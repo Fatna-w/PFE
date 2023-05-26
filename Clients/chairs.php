@@ -76,9 +76,9 @@ $result = mysqli_query($conn, $query);
         </ul>
     </div>
 
-    <?php @include_once('footer.php'); ?>
+    
 </body>
-
+<?php @include_once('footer.php'); ?>
 </html>
 
 <?php

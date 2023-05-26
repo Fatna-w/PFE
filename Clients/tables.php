@@ -23,7 +23,7 @@ $result = mysqli_query($conn, $query);
     </div>
     <style>
         .par{
-            margin-inline-start:63%;
+            margin-inline-start:64%;
             text-align: center;
             font-size: 15px;
             font-family: cursive;
@@ -76,9 +76,9 @@ $result = mysqli_query($conn, $query);
         </ul>
     </div>
 
-    <?php @include_once('footer.php'); ?>
+   
 </body>
-
+<?php @include_once('footer.php'); ?>
 </html>
 
 <?php

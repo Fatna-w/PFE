@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2023 at 08:46 PM
+-- Generation Time: May 27, 2023 at 10:27 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -53,72 +53,6 @@ INSERT INTO `acces` (`id`, `img`, `categorie`, `name`, `description`, `Qte`, `pr
 (7, 'acces7.jpg', 'Acces', 'acces7', 'organiser lespace autour\r\n', '16', '275$', '0', '2023-03-29'),
 (8, 'acces8.jpg', 'Acces', 'acces8', 'organiser lespace autour\r\n', '59', '550$', '0', '2023-03-29'),
 (9, 'acces9.jpg', 'Acces', 'acces9', 'organiser lespace autour\r\n', '42', '99$', '0', '2023-03-29');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `allproducts`
---
-
-CREATE TABLE `allproducts` (
-  `id` int(255) NOT NULL,
-  `img` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `prix` varchar(255) NOT NULL,
-  `categorie` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
-
---
--- Dumping data for table `allproducts`
---
-
-INSERT INTO `allproducts` (`id`, `img`, `name`, `description`, `prix`, `categorie`) VALUES
-(1, 'product1.jpg', 'product1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'product'),
-(2, 'product2.jpg', 'product2', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
-(3, 'product3.jpg', 'product3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '125$', 'product'),
-(4, 'product4.jpg', 'product4', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
-(5, 'product5.jpg', 'product5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'product'),
-(6, 'product6.jpg', 'product6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
-(7, 'produt7.jpg', 'product7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '125$', 'product'),
-(8, 'product8.jpg', 'product8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
-(9, 'product9.jpg', 'product9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
-(10, 'table1.jpg', 'table1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(11, 'table2.jpg', 'table2', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(12, 'table3.jpg', 'table3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(13, 'table4.jpg', 'table', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(14, 'table5.jpg', 'table5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(15, 'table6.jpg', 'table6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(16, 'table7.jpg', 'table7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(17, 'table8.jpg', 'table8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(18, 'table9.jpg', 'table9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(19, 'chair1.jpg', 'chair1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '1200$', 'chairs'),
-(20, 'chair2.jpg', 'chair2', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '2300$', 'chairs'),
-(21, 'chair3.jpg', 'chair3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '1200$', 'chairs'),
-(22, 'chair4.jpg', 'chair4', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '800$', 'chairs'),
-(23, 'chair5.jpg', 'chair5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '750$', 'chairs'),
-(24, 'chair6.jpg', 'chair6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '1900$', 'chairs'),
-(25, 'chair7.jpg', 'chair7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '230$', 'chairs'),
-(26, 'chair8.jpg', 'chair8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '654$', 'chairs'),
-(27, 'chair9.jpg', 'chair9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'chairs'),
-(28, 'light1.jpg', 'light1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'lights'),
-(29, 'light2.jpg', 'light2', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'lights'),
-(30, 'light3.jpg', 'light3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'lights'),
-(31, 'light4.jpg', 'light4', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '125$', 'lights'),
-(32, 'light5.jpg', 'light5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '145$', 'lights'),
-(33, 'light6.jpg', 'light6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '230$', 'lights'),
-(34, 'light7.jpg', 'light7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'lights'),
-(35, 'light8.jpg', 'light8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '300$', 'lights'),
-(36, 'light9.jpg', 'light9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '145$', 'lights'),
-(37, 'acces1.jpg', 'acces1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'acces'),
-(38, 'acces2.jpg', 'acces1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '100$', 'acces'),
-(39, 'acces3.jpg', 'acces3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'acces'),
-(40, 'acces4.jpg', 'acces4', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '250$', 'acces'),
-(41, 'acces5.jpg', 'acces5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'acces'),
-(42, 'acces6.jpg', 'acces6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '233$', 'acces'),
-(43, 'acces7.jpg', 'acces7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '275$', 'acces'),
-(44, 'acces8.jpg', 'acces8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '550$', 'acces'),
-(45, 'acces9.jpg', 'acces9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '99$', 'acces');
 
 -- --------------------------------------------------------
 
@@ -242,7 +176,7 @@ CREATE TABLE `product` (
   `catg_prd` int(11) DEFAULT NULL,
   `img` varchar(255) NOT NULL,
   `nom` varchar(255) NOT NULL,
-  `prix` decimal(20,2) NOT NULL,
+  `prix` varchar(255) NOT NULL,
   `description` text NOT NULL,
   `qte` varchar(255) NOT NULL,
   `prix_remise` decimal(20,2) NOT NULL,
@@ -254,15 +188,81 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `catg_prd`, `img`, `nom`, `prix`, `description`, `qte`, `prix_remise`, `date`) VALUES
-(1, 0, 'product1.jpg', 'product1', '120.00', 'organiser lespace autour', '100', '0.00', '2023-05-22 15:41:40'),
-(2, NULL, 'product2.jpg', 'product2', '130.00', 'organiser lespace autour', '220', '0.00', '2023-05-22 15:41:45'),
-(3, NULL, 'product3.jpg', 'product3', '125.00', 'organiser lespace autour', '100', '0.00', '2023-05-22 15:41:49'),
-(4, NULL, 'product4.jpg', 'product4', '130.00', 'organiser lespace autour', '200', '0.00', '2023-05-22 15:41:54'),
-(5, NULL, 'product5.jpg', 'product5', '200.00', 'organiser lespace autour', '90', '0.00', '2023-05-22 15:41:57'),
-(6, NULL, 'product6.jpg', 'product6', '130.00', 'organiser lespace autour', '220', '0.00', '2023-05-22 15:42:02'),
-(7, NULL, 'product7.jpg', 'product7', '125.00', 'organiser lespace autour', '100', '0.00', '2023-05-22 15:42:06'),
-(8, NULL, 'product8.jpg', 'product8', '130.00', 'organiser lespace autour', '200', '0.00', '2023-05-22 15:42:10'),
-(13, NULL, 'product9.jpg', 'product9', '130.00', 'organiser lespace autour', '200', '0.00', '2023-05-22 15:42:13');
+(1, 0, 'acces1.jpg', 'acces1', '200$', 'organiser lespace autour', '60', '0.00', '2023-05-27 20:04:13'),
+(2, NULL, 'chair3.jpg', 'chair3', '1200$', 'organiser lespace autour', '25', '0.00', '2023-05-27 20:05:23'),
+(3, NULL, 'table1.jpg', 'table1', '120$', 'organiser lespace autour', '120', '0.00', '2023-05-27 20:06:07'),
+(4, NULL, 'table7.jpg', 'table7', '120$', 'organiser lespace autour', '100', '0.00', '2023-05-27 20:06:50'),
+(5, NULL, 'chair6.jpg', 'chair6', '1900$', 'organiser lespace autour', '34', '0.00', '2023-05-27 20:07:42'),
+(6, NULL, 'acces5.jpg', 'acces5', '120$', 'organiser lespace autour', '12', '0.00', '2023-05-27 20:08:42'),
+(7, NULL, 'chair9.jpg', 'chair9', '200$', 'organiser lespace autour', '25', '0.00', '2023-05-27 20:09:32'),
+(8, NULL, 'table9.jpg', 'table9', '120$', 'organiser lespace autour', '90', '0.00', '2023-05-27 20:10:21'),
+(13, NULL, 'acces4.jpg', 'acces4', '275$', 'organiser lespace autour', '16', '0.00', '2023-05-27 20:11:21');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `id` int(255) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `prix` varchar(255) NOT NULL,
+  `categorie` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+--
+-- Dumping data for table `products`
+--
+
+INSERT INTO `products` (`id`, `img`, `name`, `description`, `prix`, `categorie`) VALUES
+(1, 'product1.jpg', 'product1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'product'),
+(2, 'product2.jpg', 'product2', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
+(3, 'product3.jpg', 'product3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '125$', 'product'),
+(4, 'product4.jpg', 'product4', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
+(5, 'product5.jpg', 'product5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'product'),
+(6, 'product6.jpg', 'product6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
+(7, 'produt7.jpg', 'product7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '125$', 'product'),
+(8, 'product8.jpg', 'product8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
+(9, 'product9.jpg', 'product9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
+(10, 'table1.jpg', 'table1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(11, 'table2.jpg', 'table2', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(12, 'table3.jpg', 'table3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(13, 'table4.jpg', 'table', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(14, 'table5.jpg', 'table5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(15, 'table6.jpg', 'table6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(16, 'table7.jpg', 'table7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(17, 'table8.jpg', 'table8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(18, 'table9.jpg', 'table9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(19, 'chair1.jpg', 'chair1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '1200$', 'chairs'),
+(20, 'chair2.jpg', 'chair2', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '2300$', 'chairs'),
+(21, 'chair3.jpg', 'chair3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '1200$', 'chairs'),
+(22, 'chair4.jpg', 'chair4', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '800$', 'chairs'),
+(23, 'chair5.jpg', 'chair5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '750$', 'chairs'),
+(24, 'chair6.jpg', 'chair6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '1900$', 'chairs'),
+(25, 'chair7.jpg', 'chair7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '230$', 'chairs'),
+(26, 'chair8.jpg', 'chair8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '654$', 'chairs'),
+(27, 'chair9.jpg', 'chair9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'chairs'),
+(28, 'light1.jpg', 'light1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'lights'),
+(29, 'light2.jpg', 'light2', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'lights'),
+(30, 'light3.jpg', 'light3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'lights'),
+(31, 'light4.jpg', 'light4', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '125$', 'lights'),
+(32, 'light5.jpg', 'light5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '145$', 'lights'),
+(33, 'light6.jpg', 'light6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '230$', 'lights'),
+(34, 'light7.jpg', 'light7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'lights'),
+(35, 'light8.jpg', 'light8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '300$', 'lights'),
+(36, 'light9.jpg', 'light9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '145$', 'lights'),
+(37, 'acces1.jpg', 'acces1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'acces'),
+(38, 'acces2.jpg', 'acces1', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '100$', 'acces'),
+(39, 'acces3.jpg', 'acces3', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'acces'),
+(40, 'acces4.jpg', 'acces4', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '250$', 'acces'),
+(41, 'acces5.jpg', 'acces5', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'acces'),
+(42, 'acces6.jpg', 'acces6', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '233$', 'acces'),
+(43, 'acces7.jpg', 'acces7', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '275$', 'acces'),
+(44, 'acces8.jpg', 'acces8', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '550$', 'acces'),
+(45, 'acces9.jpg', 'acces9', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '99$', 'acces');
 
 -- --------------------------------------------------------
 
@@ -333,12 +333,6 @@ INSERT INTO `tables` (`id`, `categories`, `img`, `name`, `description`, `prix`, 
 --
 
 --
--- Indexes for table `allproducts`
---
-ALTER TABLE `allproducts`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `categories`
 --
 ALTER TABLE `categories`
@@ -363,6 +357,12 @@ ALTER TABLE `product`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tables`
 --
 ALTER TABLE `tables`
@@ -371,12 +371,6 @@ ALTER TABLE `tables`
 --
 -- AUTO_INCREMENT for dumped tables
 --
-
---
--- AUTO_INCREMENT for table `allproducts`
---
-ALTER TABLE `allproducts`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `categories`
@@ -401,6 +395,12 @@ ALTER TABLE `contactus`
 --
 ALTER TABLE `product`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- AUTO_INCREMENT for table `tables`

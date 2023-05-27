@@ -48,7 +48,7 @@ $result = mysqli_query($conn, $query);
                 echo '<div class="row">';
             }
             echo '<div class="col-sm-4">';
-            echo '<a href=""><img src="images/'. $row['img'] . '" alt=""></a>';
+            echo '<a href="product-description"><img src="images/'. $row['img'] . '" alt=""></a>';
             echo '<p class="par">' . $row['description'] . '<br><br>' . $row['prix'] . '</p>';
             echo '</div>';
             $count++;

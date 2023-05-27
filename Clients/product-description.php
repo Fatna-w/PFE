@@ -17,6 +17,8 @@
 <div class="description-product">
                 <h2>Product/organiser lespace autou</h2>
             </div>
+        
+            <div class="prod1-img">
             <?php
             if(isset($_GET['id'])){
                 $productId = $_GET['id'];
@@ -24,7 +26,7 @@
                 $result=mysqli_query($conn,$query);
                 $rowProDetails=mysqli_fetch_row($result);
                 ?>
-            <div class="prod1-img">
+
                 <img src="product/ <?php echo $rowProDetails['img'];?> " alt="">
                 
                 <div class="discp-prod">
@@ -44,9 +46,13 @@
                   
                  <a href="#">Add To Cart</a>
                 </div>
-               
+
+
+                <?php } ?>
+
+
             </div>
-       <?php } ?>
+      
       
 </div>
             

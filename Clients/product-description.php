@@ -3,13 +3,15 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php include_once 'header.php'; ?>
 </head>
+
 <body>
     <div>
         <?php include_once 'navbar.php'; ?>
-    </div> 
+    </div>
 
     <div class="product1">
         <div class="description-product">
@@ -26,7 +28,7 @@
             }
             ?>
 
-            <img src="product/<?php echo $row['img']; ?>" alt="">
+            <img src="images/<?php echo $row['img']; ?>" alt="">
 
             <div class="discp-prod">
                 <h1><?php echo $row['title']; ?></h1>
@@ -53,4 +55,5 @@
 
     <?php include_once 'footer.php'; ?>
 </body>
+
 </html>

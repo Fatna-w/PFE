@@ -42,10 +42,11 @@
                     <?php echo $row['description'];?>
                 </p>
                 <br>
-                <a href="#">Add To Cart</a>
+                <a href="cart.php" name="add">Add To Cart</a>
             </div>
         </div>
     </div>
+    
    
     <br>
     <br>

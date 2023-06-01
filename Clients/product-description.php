@@ -43,6 +43,7 @@
                 </p>
                 <br>
                 <a href="#">Add To Cart</a>
+                
             </div>
         </div>
     </div>

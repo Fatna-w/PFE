@@ -3,7 +3,7 @@
 session_start();
 
 if (isset($_POST['add'])) {
-    $id=$_POST['id'];
+    $id = $_POST['id'];
     $image = $_POST['img'];
     $name = $_POST['name'];
     $quantity = $_POST['quantity'];
@@ -15,16 +15,17 @@ if (isset($_POST['add'])) {
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <?php include_once 'header.php'; ?>
 </head>
+
 <body>
-    <?php @include_once('navbar.php'); ?>
+    <?php include_once 'navbar.php'; ?>
     <h1 class="panier_txt">PANIER</h1>
-  
+
     <div class="panier">
-         
-        <table class="table table-striped" style="width : 70%" >
+        <table class="table table-striped" style="width: 70%">
             <tr>
                 <th>Product</th>
                 <th>Name</th>
@@ -36,7 +37,7 @@ if (isset($_POST['add'])) {
             if (isset($_SESSION['cart'])) {
                 foreach ($_SESSION['cart'] as $product) {
                     echo "<tr>";
-                    echo "<td><img src='" . $product['img'] . "'></td>";
+                    echo "<td><img src='images/" . $product['img'] . "'></td>";
                     echo "<td>" . $product['name'] . "</td>";
                     echo "<td>" . $product['prix'] . "</td>";
                     echo "<td>" . $product['quantity'] . "</td>";
@@ -46,7 +47,9 @@ if (isset($_POST['add'])) {
             }
             ?>
         </table>
-    
     </div>
+
+    <?php include_once 'footer.php'; ?>
 </body>
+
 </html>

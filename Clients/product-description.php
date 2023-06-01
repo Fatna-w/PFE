@@ -39,21 +39,30 @@
                 </form>
                 <h2></h2>
                 <p>
-                    <?php echo $row['description']; ?>
+                    <?php echo $row['description'];?>
                 </p>
                 <br>
-                <a href="#">Add To Cart</a>
-                
+                <a href="cart.php" name="add">Add To Cart</a>
             </div>
         </div>
     </div>
+    
+   
+    <br>
+    <br>
+    <div class="menu-product">
+        <ul class="menu">
+            <li><a href="tables.php">TABLE</a></li>
+            <li><a href="chairs.php">CHAIRS</a></li>
+            <li><a href="lights.php">LIGHTS</a></li>
+            <li><a href="acces.php">ACCES</a></li>
+            <br>
+            <br>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        </ul>
+    </div>
 
+    
     <?php include_once 'footer.php'; ?>
 </body>
 

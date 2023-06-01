@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2023 at 01:50 AM
+-- Generation Time: May 30, 2023 at 08:19 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -168,6 +168,21 @@ INSERT INTO `lights` (`id`, `img`, `categorie`, `name`, `description`, `Qte`, `p
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `panier`
+--
+
+CREATE TABLE `panier` (
+  `id` int(255) NOT NULL,
+  `img` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `prix` varchar(255) NOT NULL,
+  `quantity` varchar(255) NOT NULL,
+  `total` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `product`
 --
 
@@ -196,7 +211,7 @@ INSERT INTO `product` (`id`, `catg_prd`, `img`, `nom`, `prix`, `description`, `q
 (6, NULL, 'acces5.jpg', 'acces5', '120$', 'organiser lespace autour', '12', '0.00', '2023-05-27 20:08:42'),
 (7, NULL, 'chair9.jpg', 'chair9', '200$', 'organiser lespace autour', '25', '0.00', '2023-05-27 20:09:32'),
 (8, NULL, 'table9.jpg', 'table9', '120$', 'organiser lespace autour', '90', '0.00', '2023-05-27 20:10:21'),
-(13, NULL, 'acces4.jpg', 'acces4', '275$', 'organiser lespace autour', '16', '0.00', '2023-05-27 20:11:21');
+(9, NULL, 'acces4.jpg', 'acces4', '275$', 'organiser lespace autour', '16', '0.00', '2023-05-28 19:39:32');
 
 -- --------------------------------------------------------
 
@@ -219,22 +234,22 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `img`, `name`, `title`, `description`, `prix`, `categorie`) VALUES
-(1, 'product1.jpg', 'product1', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'product'),
-(2, 'product2.jpg', 'product2', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
-(3, 'product3.jpg', 'product3', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '125$', 'product'),
-(4, 'product4.jpg', 'product4', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
-(5, 'product5.jpg', 'product5', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'product'),
-(6, 'product6.jpg', 'product6', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
-(7, 'produt7.jpg', 'product7', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '125$', 'product'),
-(8, 'product8.jpg', 'product8', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
-(9, 'product9.jpg', 'product9', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '130$', 'product'),
+(1, 'acces1.jpg', 'acces1', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'product'),
+(2, 'chair3.jpg', 'product2', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '1200$', 'product'),
+(3, 'table1.jpg', 'product3', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'product'),
+(4, 'table7.jpg', 'product4', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'product'),
+(5, 'chair6.jpg', 'product5', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '1900$', 'product'),
+(6, 'acces5.jpg', 'product6', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'product'),
+(7, 'chair9.jpg', 'product7', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '200$', 'product'),
+(8, 'table9.jpg', 'product8', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'product'),
+(9, 'acces4.jpg', 'product9', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '274$', 'product'),
 (10, 'table1.jpg', 'table1', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
 (11, 'table2.jpg', 'table2', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
 (12, 'table3.jpg', 'table3', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
 (13, 'table4.jpg', 'table4', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
 (14, 'table5.jpg', 'table5', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
 (15, 'table6.jpg', 'table6', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
-(16, 'table7.jpg', 'table7', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
+(16, 'table7.jpg', 'table7', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\n\nto add more information about your product such as\n\nsizing, material, care and cleaning instructions.\n\nThis is also a great space to write what makes\n\nthis product special and how your customers can\n\nbene', '120$', 'tables'),
 (17, 'table8.jpg', 'table8', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
 (18, 'table9.jpg', 'table9', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '120$', 'tables'),
 (19, 'chair1.jpg', 'chair1', 'Organic Canvas Tote Bag', 'I\'m a product detail. I\'m a great place\r\n\r\nto add more information about your product such as\r\n\r\nsizing, material, care and cleaning instructions.\r\n\r\nThis is also a great space to write what makes\r\n\r\nthis product special and how your customers can\r\n\r\nbene', '1200$', 'chairs'),
@@ -352,6 +367,12 @@ ALTER TABLE `contactus`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `panier`
+--
+ALTER TABLE `panier`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
@@ -390,6 +411,12 @@ ALTER TABLE `chairs`
 --
 ALTER TABLE `contactus`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `panier`
+--
+ALTER TABLE `panier`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `product`

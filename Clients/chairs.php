@@ -22,8 +22,8 @@ $result = mysqli_query($conn, $query);
         <img src="images/chairs.png" class="product">
     </div>
     <style>
-        .par{
-            margin-inline-start:63%;
+        .par {
+            margin-inline-start: 64%;
             text-align: center;
             font-size: 15px;
             font-family: cursive;
@@ -38,32 +38,32 @@ $result = mysqli_query($conn, $query);
     </style>
 
 
-<div class="product-img">
-    <div class="container">
-        <div class="row">
-    <?php
-    if ($result) {
-        $count = 0;
-        while ($row = mysqli_fetch_assoc($result)) {
-            if ($count % 3 == 0) {
-                echo '<div class="row">';
-            }
-            echo '<div class="col-sm-4">';
-            echo '<a href=""><img src="images/'. $row['img'] . '" alt=""></a>';
-            echo '<p class="par">' . $row['description'] . '<br><br>' . $row['prix'] . '</p>';
-            echo '</div>';
-            $count++;
-            if ($count % 3 == 0) {
-                echo '</div>';
-            }
-        }
-        mysqli_free_result($result);
-    }
-    ?>
+    <div class="product-img">
+        <div class="container">
+            <div class="row">
+                <?php
+                if ($result) {
+                    $count = 0;
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($count % 3 == 0) {
+                            echo '<div class="row">';
+                        }
+                        echo '<div class="col-sm-4">';
+                        echo '<a href="product-description.php?id=' . $row['id'] . '"><img src="images/' . $row['img'] . '" alt=""></a>';
+                        echo '<p class="par">' . $row['title'] . '<br><br>' . $row['prix'] . '</p>';
+                        echo '</div>';
+                        $count++;
+                        if ($count % 3 == 0) {
+                            echo '</div>';
+                        }
+                    }
+                    mysqli_free_result($result);
+                }
+                ?>
+            </div>
+        </div>
     </div>
-</div>
-</div>
-<br>
+    <br>
 
     <div class="menu-product">
         <ul class="menu">

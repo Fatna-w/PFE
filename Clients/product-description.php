@@ -16,7 +16,7 @@
         $productPrice = $_POST['prix'];
         $quantity = $_POST['quantity'];
 
-        // hnaya kn criyiw wa7d array fin ghan7to gaa3 les item li f cart
+        
         $order = array(
             'id' => $productId,
             'img' => $productImg,
@@ -44,6 +44,7 @@
 </head>
 
 <body>
+
     <div>
         <?php include_once 'navbar.php'; ?>
     </div>

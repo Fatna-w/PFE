@@ -37,7 +37,7 @@ if (isset($_POST['add'])) {
             if (isset($_SESSION['cart'])) {
                 foreach ($_SESSION['cart'] as $product) {
                     echo "<tr>";
-                    echo "<td><img src='images/" . $product['img'] . "'></td>";
+                    echo "<td><img height=150 src='images/" . $product['img'] . "'></td>";
                     echo "<td>" . $product['name'] . "</td>";
                     echo "<td>" . $product['prix'] . "</td>";
                     echo "<td>" . $product['quantity'] . "</td>";

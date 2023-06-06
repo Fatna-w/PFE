@@ -12,7 +12,10 @@
        @include('navbar.php');
        ?>
             </div>
-       
+            <div class="info-client">
+            <h2 >INFORMATION</h2>
+            </div>
+           
 <div class ="verification" style="width:50% " >
 <form class="row g-3" >
 <div class="col-12">
@@ -43,7 +46,7 @@
  
 
   <div class="col-12">
-    <button type="submit" class="btn btn-primary" style="border-radius: 15px; padding:15px;" name="valider" >valider la commande</button>
+    <button type="submit" class="btn btn-primary"  name="valider" >Valider la commande</button>
   </div>
 </form>
 </div>

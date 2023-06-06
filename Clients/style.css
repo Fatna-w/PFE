@@ -805,4 +805,25 @@ textarea::-webkit-scrollbar-thumb{
  .verification{
     margin-top: 40px;
     margin-left: 50px;
+    
  }
+
+.info-client{
+    margin-top: 40px;
+    margin-left: 35px;
+    background-color: #d3d292;
+    padding: 10px;
+    border-radius: 3px;
+    width: 53%;
+}
+.info-client h2{
+color: #4f5a42;
+  
+}
+.col-12 button{
+    margin-left: 35%;
+    border-radius: 15px;
+    padding:15px;
+     color:#E6E5A3;
+
+}

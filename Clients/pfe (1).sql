@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2023 at 06:18 PM
+-- Generation Time: Jun 06, 2023 at 09:08 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -33,7 +33,7 @@ CREATE TABLE `acces` (
   `categorie` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
-  `Qte` varchar(255) NOT NULL,
+  `Qte` int(255) NOT NULL,
   `prix` int(255) NOT NULL,
   `remise` varchar(255) NOT NULL,
   `date` date NOT NULL
@@ -44,15 +44,15 @@ CREATE TABLE `acces` (
 --
 
 INSERT INTO `acces` (`id`, `img`, `categorie`, `name`, `description`, `Qte`, `prix`, `remise`, `date`) VALUES
-(1, 'acces1.jpg', 'Acces', 'acces1', 'organiser lespace autour\r\n', '60', 200, '0', '2023-03-29'),
-(2, 'acces2.jpg', 'Acces', 'acces2', 'organiser lespace autour\r\n', '55', 100, '0', '2023-03-29'),
-(3, 'acces3.jpg', 'Acces', 'acces3', 'organiser lespace autour\r\n', '24', 120, '0', '2023-03-29'),
-(4, 'acces4.jpg', 'Acces', 'acces4', 'organiser lespace autour\r\n', '15', 250, '0', '2023-03-29'),
-(5, 'acces5.jpg', 'Acces', 'acces5', 'organiser lespace autour\r\n', '12', 120, '0', '2023-03-29'),
-(6, 'acces6.jpg', 'Acces', 'acces6', 'organiser lespace autour\r\n', '75', 235, '0', '2023-03-29'),
-(7, 'acces7.jpg', 'Acces', 'acces7', 'organiser lespace autour\r\n', '16', 275, '0', '2023-03-29'),
-(8, 'acces8.jpg', 'Acces', 'acces8', 'organiser lespace autour\r\n', '59', 550, '0', '2023-03-29'),
-(9, 'acces9.jpg', 'Acces', 'acces9', 'organiser lespace autour\r\n', '42', 99, '0', '2023-03-29');
+(1, 'acces1.jpg', 'Acces', 'acces1', 'organiser lespace autour\r\n', 60, 200, '0', '2023-03-29'),
+(2, 'acces2.jpg', 'Acces', 'acces2', 'organiser lespace autour\r\n', 55, 100, '0', '2023-03-29'),
+(3, 'acces3.jpg', 'Acces', 'acces3', 'organiser lespace autour\r\n', 24, 120, '0', '2023-03-29'),
+(4, 'acces4.jpg', 'Acces', 'acces4', 'organiser lespace autour\r\n', 15, 250, '0', '2023-03-29'),
+(5, 'acces5.jpg', 'Acces', 'acces5', 'organiser lespace autour\r\n', 12, 120, '0', '2023-03-29'),
+(6, 'acces6.jpg', 'Acces', 'acces6', 'organiser lespace autour\r\n', 75, 235, '0', '2023-03-29'),
+(7, 'acces7.jpg', 'Acces', 'acces7', 'organiser lespace autour\r\n', 16, 275, '0', '2023-03-29'),
+(8, 'acces8.jpg', 'Acces', 'acces8', 'organiser lespace autour\r\n', 59, 550, '0', '2023-03-29'),
+(9, 'acces9.jpg', 'Acces', 'acces9', 'organiser lespace autour\r\n', 42, 99, '0', '2023-03-29');
 
 -- --------------------------------------------------------
 
@@ -88,7 +88,7 @@ CREATE TABLE `chairs` (
   `description` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `categorie` varchar(255) NOT NULL,
-  `Qte` varchar(255) NOT NULL,
+  `Qte` int(255) NOT NULL,
   `prix` int(255) NOT NULL,
   `remise` varchar(255) NOT NULL,
   `date` datetime(6) NOT NULL
@@ -99,15 +99,15 @@ CREATE TABLE `chairs` (
 --
 
 INSERT INTO `chairs` (`id`, `img`, `description`, `name`, `categorie`, `Qte`, `prix`, `remise`, `date`) VALUES
-(1, 'chair1.jpg', 'organiser lespace autour', 'chair1', 'chairs', '123', 1200, '0', '2023-04-19 23:32:15.000000'),
-(2, 'chair2.jpg', 'organiser lespace autour', 'chair2', 'chairs', '34', 2300, '0', '2023-03-29 00:00:00.000000'),
-(3, 'chair3.jpg', 'organiser lespace autour', 'chair3', 'chairs', '25', 1200, '0', '2023-03-29 00:00:00.000000'),
-(4, 'chair4.jpg', 'organiser lespace autour', 'chair4', 'chairs', '70', 800, '0', '2023-03-29 00:00:00.000000'),
-(5, 'chair5.jpg', 'organiser lespace autour', 'chair5', 'chairs', '12', 750, '0', '2023-03-28 03:58:36.000000'),
-(6, 'chair6.jpg', 'organiser lespace autour', 'chair6', 'chairs', '34', 1900, '0', '2023-03-29 00:00:00.000000'),
-(7, 'chair7.jpg', 'organiser lespace autour', 'chair7', 'chairs', '98', 230, '0', '2023-03-29 00:00:00.000000'),
-(8, 'chair8.jpg', 'organiser lespace autour', 'chair8', 'chairs', '35', 654, '0', '2023-03-29 00:00:00.000000'),
-(9, 'chair9.jpg', 'organiser lespace autour', 'chair9', 'chairs', '45', 200, '0', '2023-03-29 00:00:00.000000');
+(1, 'chair1.jpg', 'organiser lespace autour', 'chair1', 'chairs', 123, 1200, '0', '2023-04-19 23:32:15.000000'),
+(2, 'chair2.jpg', 'organiser lespace autour', 'chair2', 'chairs', 34, 2300, '0', '2023-03-29 00:00:00.000000'),
+(3, 'chair3.jpg', 'organiser lespace autour', 'chair3', 'chairs', 25, 1200, '0', '2023-03-29 00:00:00.000000'),
+(4, 'chair4.jpg', 'organiser lespace autour', 'chair4', 'chairs', 70, 800, '0', '2023-03-29 00:00:00.000000'),
+(5, 'chair5.jpg', 'organiser lespace autour', 'chair5', 'chairs', 12, 750, '0', '2023-03-28 03:58:36.000000'),
+(6, 'chair6.jpg', 'organiser lespace autour', 'chair6', 'chairs', 34, 1900, '0', '2023-03-29 00:00:00.000000'),
+(7, 'chair7.jpg', 'organiser lespace autour', 'chair7', 'chairs', 98, 230, '0', '2023-03-29 00:00:00.000000'),
+(8, 'chair8.jpg', 'organiser lespace autour', 'chair8', 'chairs', 35, 654, '0', '2023-03-29 00:00:00.000000'),
+(9, 'chair9.jpg', 'organiser lespace autour', 'chair9', 'chairs', 45, 200, '0', '2023-03-29 00:00:00.000000');
 
 -- --------------------------------------------------------
 
@@ -144,7 +144,7 @@ CREATE TABLE `lights` (
   `categorie` varchar(255) NOT NULL,
   `name` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
-  `Qte` varchar(255) NOT NULL,
+  `Qte` int(255) NOT NULL,
   `prix` int(255) NOT NULL,
   `remise` varchar(255) NOT NULL,
   `date` date NOT NULL
@@ -155,15 +155,15 @@ CREATE TABLE `lights` (
 --
 
 INSERT INTO `lights` (`id`, `img`, `categorie`, `name`, `description`, `Qte`, `prix`, `remise`, `date`) VALUES
-(1, 'light1.jpg', 'Lights', 'light1', 'organiser lespace autour', '123', 120, '0', '2023-03-29'),
-(2, 'light2.jpg', 'Lights', 'light2', 'organiser lespace autour', '140', 130, '0', '2023-03-29'),
-(3, 'light3.jpg', 'Lights', 'light3', 'organiser lespace autour', '140', 200, '0', '2023-03-29'),
-(4, 'light4.jpg', 'Lights', 'light4', 'organiser lespace autour', '20', 125, '0', '2023-03-29'),
-(5, 'light5.jpg', 'Lights', 'light5', 'organiser lespace autour', '100', 145, '0', '2023-03-29'),
-(6, 'light6.jpg', 'Lights', 'light6', 'organiser lespace autour', '111', 230, '0', '2023-03-29'),
-(7, 'light7.jpg', 'Lights', 'light7', 'organiser lespace autour', '10', 180, '0', '2023-03-29'),
-(8, 'light8.jpg', 'Lights', 'light8', 'organiser lespace autour', '30', 300, '0', '2023-03-29'),
-(9, 'light9.jpg', 'Lights', 'light9', 'organiser lespace autour', '70', 145, '0', '2023-03-29');
+(1, 'light1.jpg', 'Lights', 'light1', 'organiser lespace autour', 123, 120, '0', '2023-03-29'),
+(2, 'light2.jpg', 'Lights', 'light2', 'organiser lespace autour', 140, 130, '0', '2023-03-29'),
+(3, 'light3.jpg', 'Lights', 'light3', 'organiser lespace autour', 140, 200, '0', '2023-03-29'),
+(4, 'light4.jpg', 'Lights', 'light4', 'organiser lespace autour', 20, 125, '0', '2023-03-29'),
+(5, 'light5.jpg', 'Lights', 'light5', 'organiser lespace autour', 100, 145, '0', '2023-03-29'),
+(6, 'light6.jpg', 'Lights', 'light6', 'organiser lespace autour', 111, 230, '0', '2023-03-29'),
+(7, 'light7.jpg', 'Lights', 'light7', 'organiser lespace autour', 10, 180, '0', '2023-03-29'),
+(8, 'light8.jpg', 'Lights', 'light8', 'organiser lespace autour', 30, 300, '0', '2023-03-29'),
+(9, 'light9.jpg', 'Lights', 'light9', 'organiser lespace autour', 70, 145, '0', '2023-03-29');
 
 -- --------------------------------------------------------
 
@@ -200,7 +200,7 @@ CREATE TABLE `product` (
   `nom` varchar(255) NOT NULL,
   `prix` int(255) NOT NULL,
   `description` text NOT NULL,
-  `qte` varchar(255) NOT NULL,
+  `qte` int(255) NOT NULL,
   `prix_remise` decimal(20,2) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
@@ -210,15 +210,15 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `catg_prd`, `img`, `nom`, `prix`, `description`, `qte`, `prix_remise`, `date`) VALUES
-(1, 0, 'acces1.jpg', 'acces1', 200, 'organiser lespace autour', '60', '0.00', '2023-05-27 20:04:13'),
-(2, NULL, 'chair3.jpg', 'chair3', 1200, 'organiser lespace autour', '25', '0.00', '2023-05-27 20:05:23'),
-(3, NULL, 'table1.jpg', 'table1', 120, 'organiser lespace autour', '120', '0.00', '2023-05-27 20:06:07'),
-(4, NULL, 'table7.jpg', 'table7', 120, 'organiser lespace autour', '100', '0.00', '2023-05-27 20:06:50'),
-(5, NULL, 'chair6.jpg', 'chair6', 1900, 'organiser lespace autour', '34', '0.00', '2023-05-27 20:07:42'),
-(6, NULL, 'acces5.jpg', 'acces5', 120, 'organiser lespace autour', '12', '0.00', '2023-05-27 20:08:42'),
-(7, NULL, 'chair9.jpg', 'chair9', 200, 'organiser lespace autour', '25', '0.00', '2023-05-27 20:09:32'),
-(8, NULL, 'table9.jpg', 'table9', 120, 'organiser lespace autour', '90', '0.00', '2023-05-27 20:10:21'),
-(9, NULL, 'acces4.jpg', 'acces4', 275, 'organiser lespace autour', '16', '0.00', '2023-05-28 19:39:32');
+(1, 0, 'acces1.jpg', 'acces1', 200, 'organiser lespace autour', 60, '0.00', '2023-05-27 20:04:13'),
+(2, NULL, 'chair3.jpg', 'chair3', 1200, 'organiser lespace autour', 25, '0.00', '2023-05-27 20:05:23'),
+(3, NULL, 'table1.jpg', 'table1', 120, 'organiser lespace autour', 120, '0.00', '2023-05-27 20:06:07'),
+(4, NULL, 'table7.jpg', 'table7', 120, 'organiser lespace autour', 100, '0.00', '2023-05-27 20:06:50'),
+(5, NULL, 'chair6.jpg', 'chair6', 1900, 'organiser lespace autour', 34, '0.00', '2023-05-27 20:07:42'),
+(6, NULL, 'acces5.jpg', 'acces5', 120, 'organiser lespace autour', 12, '0.00', '2023-05-27 20:08:42'),
+(7, NULL, 'chair9.jpg', 'chair9', 200, 'organiser lespace autour', 25, '0.00', '2023-05-27 20:09:32'),
+(8, NULL, 'table9.jpg', 'table9', 120, 'organiser lespace autour', 90, '0.00', '2023-05-27 20:10:21'),
+(9, NULL, 'acces4.jpg', 'acces4', 275, 'organiser lespace autour', 16, '0.00', '2023-05-28 19:39:32');
 
 -- --------------------------------------------------------
 
@@ -332,7 +332,7 @@ CREATE TABLE `tables` (
   `name` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `prix` int(255) NOT NULL,
-  `Qte` varchar(255) NOT NULL,
+  `Qte` int(255) NOT NULL,
   `remise` varchar(255) NOT NULL,
   `date` datetime(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
@@ -342,15 +342,15 @@ CREATE TABLE `tables` (
 --
 
 INSERT INTO `tables` (`id`, `categories`, `img`, `name`, `description`, `prix`, `Qte`, `remise`, `date`) VALUES
-(1, 'Tables', 'table1.jpg', 'table1', 'organiser lespace autour', 120, '120', '0', '2023-03-28 03:54:57.000000'),
-(2, 'Tables', 'table2.jpg', 'table2', 'organiser lespace autour', 120, '100', '0', '2023-03-28 03:54:57.000000'),
-(3, 'Tables', 'table3.jpg', 'table3', 'organiser lespace autour', 120, '20', '0', '2023-03-28 03:56:52.000000'),
-(4, 'Tables', 'table4.jpg', 'table4', 'organiser lespace autour', 120, '90', '0', '2023-03-28 03:57:34.000000'),
-(5, 'Tables', 'table5.jpg', 'table5', 'organiser lespace autour', 120, '220', '0', '2023-03-28 03:58:36.000000'),
-(6, 'Tables', 'table6.jpg', 'table6', 'organiser lespace autour', 120, '120', '0', '2023-03-28 03:54:57.000000'),
-(7, 'Tables', 'table7.jpg', 'table7', 'organiser lespace autour', 120, '100', '0', '2023-03-28 03:54:57.000000'),
-(8, 'Tables', 'table8.jpg', 'table8', 'organiser lespace autour', 120, '20', '0', '2023-03-28 03:56:52.000000'),
-(9, 'Tables', 'table9.jpg', 'table9', 'organiser lespace autour', 120, '90', '0', '2023-03-28 03:57:34.000000');
+(1, 'Tables', 'table1.jpg', 'table1', 'organiser lespace autour', 120, 120, '0', '2023-03-28 03:54:57.000000'),
+(2, 'Tables', 'table2.jpg', 'table2', 'organiser lespace autour', 120, 100, '0', '2023-03-28 03:54:57.000000'),
+(3, 'Tables', 'table3.jpg', 'table3', 'organiser lespace autour', 120, 20, '0', '2023-03-28 03:56:52.000000'),
+(4, 'Tables', 'table4.jpg', 'table4', 'organiser lespace autour', 120, 90, '0', '2023-03-28 03:57:34.000000'),
+(5, 'Tables', 'table5.jpg', 'table5', 'organiser lespace autour', 120, 220, '0', '2023-03-28 03:58:36.000000'),
+(6, 'Tables', 'table6.jpg', 'table6', 'organiser lespace autour', 120, 120, '0', '2023-03-28 03:54:57.000000'),
+(7, 'Tables', 'table7.jpg', 'table7', 'organiser lespace autour', 120, 100, '0', '2023-03-28 03:54:57.000000'),
+(8, 'Tables', 'table8.jpg', 'table8', 'organiser lespace autour', 120, 20, '0', '2023-03-28 03:56:52.000000'),
+(9, 'Tables', 'table9.jpg', 'table9', 'organiser lespace autour', 120, 90, '0', '2023-03-28 03:57:34.000000');
 
 --
 -- Indexes for dumped tables

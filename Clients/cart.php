@@ -33,7 +33,8 @@ if (isset($_POST['add'])) {
                 <th>Quantite</th>
                 <th>Action</th>
             </tr>
-            <?php       
+            <?php 
+            $numbers = 0;
             if (isset($_SESSION['cart'])) {
                 foreach ($_SESSION['cart'] as $product) {
                     $quantity = $product['quantity'];

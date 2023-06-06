@@ -25,15 +25,14 @@
             'quantity' => $quantity
         );
 
-        // hnaya kanchofo wach deja kayn chi produit f cart wla 5awya
-
+       
         if (!isset($_SESSION['cart'])) {
 
-            // la kant 5awya k initializiwha b array 5awi
+            
             $_SESSION['cart'] = array();
         }
 
-        //la kan dak array deja kayn donc deja kayn chi produit fih. ghi aknzido item jdid dyalna
+       
         $_SESSION['cart'][] = $order;
 
        
@@ -73,7 +72,7 @@
                     <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                     <input type="hidden" name="img" value="<?php echo $row['img']; ?>">
                     <input type="hidden" name="name" value="<?php echo $row['title']; ?>">
-                    <input type="hidden" name="prix" value="<?php echo $row['prix']; ?>">
+                    <input type="hidden" name="prix" value="<?php echo $row['prix'] ; ?>">
                     <label for="quantity">Quantity:</label><br>
                     <input value="1" type="number" id="quantity" name="quantity" min="1" max="300">
                     <h2></h2>

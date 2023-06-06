@@ -50,7 +50,7 @@ $result = mysqli_query($conn, $query);
                         }
                         echo '<div class="col-sm-4">';
                         echo '<a href="product-description.php?id=' . $row['id'] . '"><img src="images/' . $row['img'] . '" alt=""></a>';
-                        echo '<p class="par">' . $row['title'] . '<br><br>' . $row['prix'] . '</p>';
+                        echo '<p class="par">' . $row['title'] . '<br><br>' . $row['prix'] .'$'. '</p>';
                         echo '</div>';
                         $count++;
                         if ($count % 3 == 0) {

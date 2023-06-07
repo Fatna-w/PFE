@@ -23,7 +23,7 @@ $result = mysqli_query($conn, $query);
     </div>
     <style>
         .par {
-            margin-inline-start: 64%;
+            margin-inline-start: 55%;
             text-align: center;
             font-size: 15px;
             font-family: cursive;

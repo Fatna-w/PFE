@@ -19,12 +19,14 @@
            </div>
             
            
-            <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>
-                elit. Sed non risus. Suspendisse lectus tortor, dignissim<br>
-                sit amet, adipiscing nec, ultricies sed, dolor.<br>
-                elit. Sed non risus. Suspendisse lectus tortor, dignissim<br>
-                sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            <div class="welcomtext">
+            <p>Welcome to our furniture website! <br>
+             are here to make your furniture shopping experience enjoyable and hassle-free.<br>
+              Browse through our curated collection of exquisite furniture pieces, <br>
+              carefully selected to suit various styles and preferences.<br>
+               Whether you're looking for a cozy sofa, a sleek dining table, or trendy decor accessories,<br>
+                we have everything you need to create a space that reflects your unique taste.<br>
+                Get inspired and start turning your house into a home today!<br>
                 
         </div>
         

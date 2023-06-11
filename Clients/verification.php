@@ -15,16 +15,14 @@ if (isset($_POST['valider'])) {
    VALUES ('$addressMail', '$nom', '$prenom', '$address', '$ville', '$num')";
   $conn->query($insertOrderQuery);
 
-  $orderId = $conn->insert_id;
+  $orderId = $conn-> insert_id;
 
   if (isset($_SESSION['cart'])) {
     foreach ($_SESSION['cart'] as $product) {
       $productId = $product['id'];
       $quantity = $product['quantity'];
-
-
       $insertOrderItemQuery = "INSERT INTO order_items (product_id, quantity, order_id)
-       VALUES ('$productId', '$quantity', '$orderId')";
+      VALUES ('$productId', '$quantity', '$orderId')";
       $conn->query($insertOrderItemQuery);
     }
   }

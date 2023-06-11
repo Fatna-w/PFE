@@ -86,7 +86,7 @@
 
                     <a href="product.php"><button type="button" class="btn btn-primary btn-lg">Continue shopping</button></a>
 
-                    <button type="submit" class="btn btn-secondary btn-lg"  name="checkout"><a href="verification.php">Checkout</a></button>
+                    <a href="verification.php"><button type="submit" class="btn btn-secondary btn-lg"  name="checkout">Checkout</button></a>
                 </form>
             </div>
             <br>

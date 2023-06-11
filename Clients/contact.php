@@ -46,8 +46,6 @@ if(isset($_POST['submit'])){
                 <textarea name="message"  required></textarea>
                 <input type="submit" value="Send" id="button" name="submit">
             </form>
-
-
         </div>
         <br>
         <br>
@@ -59,6 +57,8 @@ if(isset($_POST['submit'])){
         
        
 </body>
-<?php @include_once('footer.php'); ?>
+<?php 
+@include_once('footer.php'); ?>
     
     </html>
+    

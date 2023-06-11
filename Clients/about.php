@@ -20,15 +20,21 @@
            
         </div>
         <div class="prg">
-            <p class="paragraphe">Lorem ipsum dolor sit amet,<br> consectetur adipiscing<br>
-                elit. Sed non risus.<br> Suspendisse lectus tortor,<br> dignissim<br>
-                sit amet, adipiscing nec.</p>
-                <p class="paragraphe">Lorem ipsum dolor sit amet,<br> consectetur adipiscing<br>
-                    elit. Sed non risus.<br> Suspendisse lectus tortor,<br> dignissim<br>
-                    sit amet, adipiscing nec.</p>
-                    <p class="paragraphe">Lorem ipsum dolor sit amet,<br> consectetur adipiscing<br>
-                        elit. Sed non risus.<br> Suspendisse lectus tortor,<br> dignissim<br>
-                        sit amet, adipiscing nec.</p>
+            <p class="paragraphe">Leadership is the catalyst<br>
+                 for success. Inspire, empower,<br>
+              and achieve greatness.</p>
+
+
+              
+                <p class="paragraphe">Careers are personal journeys <br>
+                    of growth and fulfillment.<br>
+                     Find your path and thrive.</p>
+
+
+
+                    <p class="paragraphe">Partnerships amplify success <br>
+                        through collaboration.<br>
+                         Together, we thrive.</p>
         </div>
         
 

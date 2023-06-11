@@ -15,9 +15,9 @@
             
         </div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing<br>
-                elit. Sed non risus. Suspendisse lectus tortor, dignissim<br>
-                sit amet, adipiscing nec, ultricies sed, dolor.</p>
+            <p>Discover exquisite furniture at KOHINOOR Agency.<br>
+             Elevate your home's style with our curated selection.<br>
+              Shop now!</p>
                 <div>
                     <button type="button"> <span></span><a href="login.php">Login</a> </button>
                     <h6>no account yet? <a href="register.php">sign-up here</a></h6>

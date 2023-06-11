@@ -84,7 +84,22 @@
     font-weight: 100;
     line-height: 35px;
 }
-
+.welcomtext{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.welcomtext p{
+   
+    font-size: 15px;
+    margin-top:65px;
+    font-weight: 100;
+    line-height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 button{
     font-size: larger;
@@ -103,7 +118,7 @@ button{
 
 }
 span{
-     background: rgb(255, 255, 255);
+     background: rgba(253, 252, 252, 0.938);
      height: 100%;
      width: 100%;
      border-radius: 25px;
@@ -124,7 +139,7 @@ button:hover{
 }
 
 a{
-    color: #4f5a42;
+    color: #524e2e;
     text-decoration: none;
     
 
@@ -285,14 +300,16 @@ a{
 }
 .paragraphe{
     
-    margin: 0px 80px;
+    margin: 0px 75px ;
+    margin-top: 40px;
+    margin-left: 65px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     display: inline-block;
 
 }
 .prg{
-    margin-left: 15%;
+    margin-left: 16%;
 }
 .content2{
     width: 100%;
@@ -621,12 +638,11 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 .wlctxt h1{
-    
+    margin-top: 20px;
     color: #d3d292;
     text-align: center;
     font-size: 70px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    font-family: cursive;    
 }
 .wlctxt{
     margin-top: 40px;
@@ -825,5 +841,9 @@ color: #4f5a42;
     border-radius: 15px;
     padding:15px;
      color:#E6E5A3;
+     
 
+}
+.text-center{
+    margin-top: 10%;
 }

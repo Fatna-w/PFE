@@ -36,6 +36,9 @@
     <div class="banner">
         <div class="content2">
             <div class="login1">
+                <br>
+                <br>
+                <br>
                 <a href="Home.php"><img src="images/logo site1.png" class="logo1" ></a>
                 <div class="form">
                    
@@ -59,19 +62,21 @@
                             <var></var>
                             <label >Password</label>
                         </div>
-                        <div class="pass">Forgot Password ?</div>
+                      <a href="forgot.php"><div class="pass">Forgot Password ?</div></a>  
                        <a href="welcome.php"> <input type="submit" value="login" name="submit"></a>
                         <div class="signlink">
                             Not a membre ? <a href="register.php">sign-up</a><br>
-    
                         </div>
                     </form>
                 </div>
+                <div class="col-12">
+                <a href="Home.php"><button type="submit" class="btn btn-primary"  style="margin-left: 0;">Continue without login</button></a>  
+                </div>
+        
             </div>
            
             
         </div>
-        
         
     </div>
     

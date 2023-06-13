@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2023 at 09:08 PM
+-- Generation Time: Jun 14, 2023 at 12:17 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -20,39 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `pfe`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `acces`
---
-
-CREATE TABLE `acces` (
-  `id` int(255) NOT NULL,
-  `img` varchar(255) NOT NULL,
-  `categorie` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `Qte` int(255) NOT NULL,
-  `prix` int(255) NOT NULL,
-  `remise` varchar(255) NOT NULL,
-  `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
-
---
--- Dumping data for table `acces`
---
-
-INSERT INTO `acces` (`id`, `img`, `categorie`, `name`, `description`, `Qte`, `prix`, `remise`, `date`) VALUES
-(1, 'acces1.jpg', 'Acces', 'acces1', 'organiser lespace autour\r\n', 60, 200, '0', '2023-03-29'),
-(2, 'acces2.jpg', 'Acces', 'acces2', 'organiser lespace autour\r\n', 55, 100, '0', '2023-03-29'),
-(3, 'acces3.jpg', 'Acces', 'acces3', 'organiser lespace autour\r\n', 24, 120, '0', '2023-03-29'),
-(4, 'acces4.jpg', 'Acces', 'acces4', 'organiser lespace autour\r\n', 15, 250, '0', '2023-03-29'),
-(5, 'acces5.jpg', 'Acces', 'acces5', 'organiser lespace autour\r\n', 12, 120, '0', '2023-03-29'),
-(6, 'acces6.jpg', 'Acces', 'acces6', 'organiser lespace autour\r\n', 75, 235, '0', '2023-03-29'),
-(7, 'acces7.jpg', 'Acces', 'acces7', 'organiser lespace autour\r\n', 16, 275, '0', '2023-03-29'),
-(8, 'acces8.jpg', 'Acces', 'acces8', 'organiser lespace autour\r\n', 59, 550, '0', '2023-03-29'),
-(9, 'acces9.jpg', 'Acces', 'acces9', 'organiser lespace autour\r\n', 42, 99, '0', '2023-03-29');
 
 -- --------------------------------------------------------
 
@@ -75,39 +42,6 @@ INSERT INTO `categories` (`id`, `name`, `date`) VALUES
 (2, 'Chairs', '2023-03-29 01:28:30'),
 (3, 'Lights', '2023-03-29 01:29:10'),
 (4, 'Acces', '2023-03-29 01:29:30');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `chairs`
---
-
-CREATE TABLE `chairs` (
-  `id` int(255) NOT NULL,
-  `img` varchar(255) NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `categorie` varchar(255) NOT NULL,
-  `Qte` int(255) NOT NULL,
-  `prix` int(255) NOT NULL,
-  `remise` varchar(255) NOT NULL,
-  `date` datetime(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
-
---
--- Dumping data for table `chairs`
---
-
-INSERT INTO `chairs` (`id`, `img`, `description`, `name`, `categorie`, `Qte`, `prix`, `remise`, `date`) VALUES
-(1, 'chair1.jpg', 'organiser lespace autour', 'chair1', 'chairs', 123, 1200, '0', '2023-04-19 23:32:15.000000'),
-(2, 'chair2.jpg', 'organiser lespace autour', 'chair2', 'chairs', 34, 2300, '0', '2023-03-29 00:00:00.000000'),
-(3, 'chair3.jpg', 'organiser lespace autour', 'chair3', 'chairs', 25, 1200, '0', '2023-03-29 00:00:00.000000'),
-(4, 'chair4.jpg', 'organiser lespace autour', 'chair4', 'chairs', 70, 800, '0', '2023-03-29 00:00:00.000000'),
-(5, 'chair5.jpg', 'organiser lespace autour', 'chair5', 'chairs', 12, 750, '0', '2023-03-28 03:58:36.000000'),
-(6, 'chair6.jpg', 'organiser lespace autour', 'chair6', 'chairs', 34, 1900, '0', '2023-03-29 00:00:00.000000'),
-(7, 'chair7.jpg', 'organiser lespace autour', 'chair7', 'chairs', 98, 230, '0', '2023-03-29 00:00:00.000000'),
-(8, 'chair8.jpg', 'organiser lespace autour', 'chair8', 'chairs', 35, 654, '0', '2023-03-29 00:00:00.000000'),
-(9, 'chair9.jpg', 'organiser lespace autour', 'chair9', 'chairs', 45, 200, '0', '2023-03-29 00:00:00.000000');
 
 -- --------------------------------------------------------
 
@@ -135,90 +69,47 @@ INSERT INTO `contactus` (`id`, `firstname`, `lastname`, `email`, `mobile`, `mess
 -- --------------------------------------------------------
 
 --
--- Table structure for table `lights`
+-- Table structure for table `orders`
 --
 
-CREATE TABLE `lights` (
-  `id` int(255) NOT NULL,
-  `img` varchar(255) NOT NULL,
-  `categorie` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `Qte` int(255) NOT NULL,
-  `prix` int(255) NOT NULL,
-  `remise` varchar(255) NOT NULL,
-  `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
-
---
--- Dumping data for table `lights`
---
-
-INSERT INTO `lights` (`id`, `img`, `categorie`, `name`, `description`, `Qte`, `prix`, `remise`, `date`) VALUES
-(1, 'light1.jpg', 'Lights', 'light1', 'organiser lespace autour', 123, 120, '0', '2023-03-29'),
-(2, 'light2.jpg', 'Lights', 'light2', 'organiser lespace autour', 140, 130, '0', '2023-03-29'),
-(3, 'light3.jpg', 'Lights', 'light3', 'organiser lespace autour', 140, 200, '0', '2023-03-29'),
-(4, 'light4.jpg', 'Lights', 'light4', 'organiser lespace autour', 20, 125, '0', '2023-03-29'),
-(5, 'light5.jpg', 'Lights', 'light5', 'organiser lespace autour', 100, 145, '0', '2023-03-29'),
-(6, 'light6.jpg', 'Lights', 'light6', 'organiser lespace autour', 111, 230, '0', '2023-03-29'),
-(7, 'light7.jpg', 'Lights', 'light7', 'organiser lespace autour', 10, 180, '0', '2023-03-29'),
-(8, 'light8.jpg', 'Lights', 'light8', 'organiser lespace autour', 30, 300, '0', '2023-03-29'),
-(9, 'light9.jpg', 'Lights', 'light9', 'organiser lespace autour', 70, 145, '0', '2023-03-29');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `panier`
---
-
-CREATE TABLE `panier` (
-  `id` int(255) NOT NULL,
-  `img` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `prix` int(255) NOT NULL,
-  `quantity` varchar(255) NOT NULL,
-  `total` int(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
-
---
--- Dumping data for table `panier`
---
-
-INSERT INTO `panier` (`id`, `img`, `name`, `prix`, `quantity`, `total`) VALUES
-(1, 'acces1.jpg', 'acces1', 200, '2', 400);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `product`
---
-
-CREATE TABLE `product` (
-  `id` int(255) NOT NULL,
-  `catg_prd` int(11) DEFAULT NULL,
-  `img` varchar(255) NOT NULL,
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL,
+  `address_mail` varchar(255) NOT NULL,
   `nom` varchar(255) NOT NULL,
-  `prix` int(255) NOT NULL,
-  `description` text NOT NULL,
-  `qte` int(255) NOT NULL,
-  `prix_remise` decimal(20,2) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
+  `prenom` varchar(255) NOT NULL,
+  `address` varchar(255) NOT NULL,
+  `ville` varchar(255) NOT NULL,
+  `num` varchar(255) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
 --
--- Dumping data for table `product`
+-- Dumping data for table `orders`
 --
 
-INSERT INTO `product` (`id`, `catg_prd`, `img`, `nom`, `prix`, `description`, `qte`, `prix_remise`, `date`) VALUES
-(1, 0, 'acces1.jpg', 'acces1', 200, 'organiser lespace autour', 60, '0.00', '2023-05-27 20:04:13'),
-(2, NULL, 'chair3.jpg', 'chair3', 1200, 'organiser lespace autour', 25, '0.00', '2023-05-27 20:05:23'),
-(3, NULL, 'table1.jpg', 'table1', 120, 'organiser lespace autour', 120, '0.00', '2023-05-27 20:06:07'),
-(4, NULL, 'table7.jpg', 'table7', 120, 'organiser lespace autour', 100, '0.00', '2023-05-27 20:06:50'),
-(5, NULL, 'chair6.jpg', 'chair6', 1900, 'organiser lespace autour', 34, '0.00', '2023-05-27 20:07:42'),
-(6, NULL, 'acces5.jpg', 'acces5', 120, 'organiser lespace autour', 12, '0.00', '2023-05-27 20:08:42'),
-(7, NULL, 'chair9.jpg', 'chair9', 200, 'organiser lespace autour', 25, '0.00', '2023-05-27 20:09:32'),
-(8, NULL, 'table9.jpg', 'table9', 120, 'organiser lespace autour', 90, '0.00', '2023-05-27 20:10:21'),
-(9, NULL, 'acces4.jpg', 'acces4', 275, 'organiser lespace autour', 16, '0.00', '2023-05-28 19:39:32');
+INSERT INTO `orders` (`id`, `address_mail`, `nom`, `prenom`, `address`, `ville`, `num`, `created_at`) VALUES
+(5, 'naxdh@gmail.com', 'dfgh', 'sdfghj', 'dnlkjh', 'sdfghj', '0987654', '2023-06-11 15:00:30');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_items`
+--
+
+CREATE TABLE `order_items` (
+  `id` int(11) NOT NULL,
+  `order_id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
+
+--
+-- Dumping data for table `order_items`
+--
+
+INSERT INTO `order_items` (`id`, `order_id`, `product_id`, `quantity`, `created_at`) VALUES
+(12, 5, 19, 2, '2023-06-11 15:00:30');
 
 -- --------------------------------------------------------
 
@@ -319,39 +210,6 @@ INSERT INTO `register` (`id`, `username`, `email`, `password`, `cpassword`) VALU
 (0, 'faical', 'faical@gmail.com', '05d251ea28c5be9426611a121db0c92a', '05d251ea28c5be9426611a121db0c92a'),
 (0, 'fofa', 'fofa@gmail.com ', '8be187c9221945e994312880a1eb8233', '8be187c9221945e994312880a1eb8233');
 
--- --------------------------------------------------------
-
---
--- Table structure for table `tables`
---
-
-CREATE TABLE `tables` (
-  `id` int(255) NOT NULL,
-  `categories` varchar(255) NOT NULL,
-  `img` varchar(255) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `description` varchar(255) NOT NULL,
-  `prix` int(255) NOT NULL,
-  `Qte` int(255) NOT NULL,
-  `remise` varchar(255) NOT NULL,
-  `date` datetime(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
-
---
--- Dumping data for table `tables`
---
-
-INSERT INTO `tables` (`id`, `categories`, `img`, `name`, `description`, `prix`, `Qte`, `remise`, `date`) VALUES
-(1, 'Tables', 'table1.jpg', 'table1', 'organiser lespace autour', 120, 120, '0', '2023-03-28 03:54:57.000000'),
-(2, 'Tables', 'table2.jpg', 'table2', 'organiser lespace autour', 120, 100, '0', '2023-03-28 03:54:57.000000'),
-(3, 'Tables', 'table3.jpg', 'table3', 'organiser lespace autour', 120, 20, '0', '2023-03-28 03:56:52.000000'),
-(4, 'Tables', 'table4.jpg', 'table4', 'organiser lespace autour', 120, 90, '0', '2023-03-28 03:57:34.000000'),
-(5, 'Tables', 'table5.jpg', 'table5', 'organiser lespace autour', 120, 220, '0', '2023-03-28 03:58:36.000000'),
-(6, 'Tables', 'table6.jpg', 'table6', 'organiser lespace autour', 120, 120, '0', '2023-03-28 03:54:57.000000'),
-(7, 'Tables', 'table7.jpg', 'table7', 'organiser lespace autour', 120, 100, '0', '2023-03-28 03:54:57.000000'),
-(8, 'Tables', 'table8.jpg', 'table8', 'organiser lespace autour', 120, 20, '0', '2023-03-28 03:56:52.000000'),
-(9, 'Tables', 'table9.jpg', 'table9', 'organiser lespace autour', 120, 90, '0', '2023-03-28 03:57:34.000000');
-
 --
 -- Indexes for dumped tables
 --
@@ -363,39 +221,29 @@ ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `chairs`
---
-ALTER TABLE `chairs`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `contactus`
 --
 ALTER TABLE `contactus`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `panier`
+-- Indexes for table `orders`
 --
-ALTER TABLE `panier`
+ALTER TABLE `orders`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `product`
+-- Indexes for table `order_items`
 --
-ALTER TABLE `product`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `order_items`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `order_id` (`order_id`),
+  ADD KEY `product_id` (`product_id`);
 
 --
 -- Indexes for table `products`
 --
 ALTER TABLE `products`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `tables`
---
-ALTER TABLE `tables`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -409,28 +257,22 @@ ALTER TABLE `categories`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `chairs`
---
-ALTER TABLE `chairs`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
-
---
 -- AUTO_INCREMENT for table `contactus`
 --
 ALTER TABLE `contactus`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `panier`
+-- AUTO_INCREMENT for table `orders`
 --
-ALTER TABLE `panier`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `product`
+-- AUTO_INCREMENT for table `order_items`
 --
-ALTER TABLE `product`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+ALTER TABLE `order_items`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `products`
@@ -439,45 +281,17 @@ ALTER TABLE `products`
   MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
--- AUTO_INCREMENT for table `tables`
+-- Constraints for dumped tables
 --
-ALTER TABLE `tables`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- Constraints for table `order_items`
+--
+ALTER TABLE `order_items`
+  ADD CONSTRAINT `order_items_ibfk_1` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`),
+  ADD CONSTRAINT `order_items_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-
-
-
-
-
-
-
-
-
-
-
-CREATE TABLE order_items (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  order_id INT NOT NULL,
-  product_id INT NOT NULL,
-  quantity INT NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (order_id) REFERENCES orders(id),
-  FOREIGN KEY (product_id) REFERENCES products(id)
-);
-
-
-
-CREATE TABLE orders (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  address_mail VARCHAR(255) NOT NULL,
-  nom VARCHAR(255) NOT NULL,
-  prenom VARCHAR(255) NOT NULL,
-  address VARCHAR(255) NOT NULL,
-  ville VARCHAR(255) NOT NULL,
-  num VARCHAR(255) NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);

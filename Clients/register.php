@@ -49,9 +49,7 @@ if(isset($_POST['submit'])){
                                 echo '<h4 class="error-msg">'.$error.'</h4>';
                           };
                           };
-                        ?>
-      
-                        
+                        ?>     
                             <div class="txt_field">
                             <input  type="text" name ="username" required>
                             <var></var>
@@ -79,6 +77,7 @@ if(isset($_POST['submit'])){
                         
                     </form>
                 </div>
+                
             </div>
            
             

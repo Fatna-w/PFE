@@ -26,8 +26,7 @@ if (isset($_POST['valider'])) {
       $conn->query($insertOrderItemQuery);
     }
   }
-
-  // Clear the cart after the order has been placed
+  
   unset($_SESSION['cart']);
 
   header("Location: thank-you.php");

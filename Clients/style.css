@@ -710,7 +710,7 @@ textarea::-webkit-scrollbar-thumb{
 }
 .prod1-img{
     
-    margin-left: 160px;
+    margin-left: 140px;
     margin-top: 30px;
     display: flex;
 
@@ -756,15 +756,17 @@ textarea::-webkit-scrollbar-thumb{
 
 }
 .discp-prod h2{
-    border-bottom: #667c3d solid 2px;
+    border-bottom: #667c3d solid 2px ;
+    width: 60%;
     margin-left: 25px;
     margin-top: 20px;
 
 }
 
 .discp-prod p{
-    margin-left: 25px;
+    margin-left: 20px;
     margin-top: 20px;
+    margin-right: 40%;
     font-size: 12px;
     font: lighter;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;

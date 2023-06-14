@@ -32,7 +32,7 @@
 
 
 
-        <div class="container mt-4">
+        <div class="container mt-4  ps-5">
             <h2>Products</h2>
             <div class="text-end mb-3">
                 <a href="add_product.php" class="btn btn-primary">Add New Product</a>

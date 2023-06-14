@@ -32,7 +32,7 @@
         
         <div class="centre">
             <ul class="lista"> 
-                <li><a href="table.php">Tables</a></li>
+                <li><a href="tables.php">Tables</a></li>
                 <li><a href="chairs.php">Chairs</a></li>
                 <li><a href="lights.php">Lights</a></li>
                 <li><a href="acces.php">Acces</a></li>

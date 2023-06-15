@@ -72,11 +72,11 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-<button class="btn"><a href="product.php" class="btn btn-primary  fs-5"><-- Back to Product</a></button>
+<a href="product.php" class="btn btn-primary" style=" margin-left:80%; margin-top:30px; background-color: #4f5a42; border:0px;"><-- Back to Product</a>
 
-    <div class="container mt-4">
-        <h2>Add Product</h2>
-        <form method="POST" enctype="multipart/form-data">
+    <div class="container mt-4" >
+        <h1 style="color: #40492e;margin-left: 20px;margin-top: 30px; border-bottom: #40492e solid 3px;width: 90%;padding-bottom: 20px; margin-bottom:50px;">Add Product</h1>
+        <form method="POST" enctype="multipart/form-data" style="width:70%; margin-left: 40px; " >
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>
@@ -101,9 +101,13 @@ if (isset($_POST['submit'])) {
                 <label for="image" class="form-label">Image</label>
                 <input type="file" class="form-control" id="image" name="image" required>
             </div>
-            <button type="submit" class="btn btn-primary" name="submit">Add Product</button>
+            <button style="background-color: #4f5a42; border:0px; margin-top:20px;" type="submit" class="btn btn-primary" name="submit">Add Product</button>
         </form>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- Include Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

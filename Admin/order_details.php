@@ -11,9 +11,27 @@
 </head>
 
 <body>
-    <div class="container mt-4">
-        <h2>Order Details</h2>
 
+    <div class="d-flex align-items-center" style="margin-top: 100px;">
+        <nav class="bg-dark text-white position-fixed start-0 top-0 bottom-0" style="width: 300px;">
+            <ul class="nav flex-column">
+                <li class="logo">
+                <img alt="" src="../Clients/images//logo site1.png" class=" mb-5 img-fluid" style="width: 200px; margin-left: 20px; margin-top: 30px; ">
+                </li>
+                <li class="nav-item ms-5">
+                    <a class="nav-link text-white fs-5" href="product.php"><i class="fa fa-cube"></i> Products</a>
+                </li>
+                <li class="nav-item ms-5">
+                    <a class="nav-link text-white fs-5" href="#"><i class="fa fa-shopping-cart"></i> Orders</a>
+                </li>
+                <li class="nav-item ms-5">
+                    <a class="nav-link text-white fs-5" href="statistique.php"><i class="fa fa-bar-chart"></i> Statistics</a>
+                </li>
+            </ul>
+        </nav>
+    <div class="container " style="margin-left:25%; margin-top:5px;">
+    <h1 style="color: #40492e;margin-left: 20px; border-bottom: #40492e solid 3px;width: 90%;padding-bottom: 20px; margin-bottom:50px;">Order Details</h1>
+        <div style="background:#E6E5A3; width:60%; border-radius:15px; padding:30px;">
         <?php
         // Establish a database connection
         $host = "localhost";
@@ -60,9 +78,13 @@
         mysqli_close($conn);
         ?>
 
-        <a href="orders.php" class="btn btn-primary">Back to Orders</a>
+        <a href="orders.php" class="btn btn-primary" style="background-color:#4f5a42; border:0px; ">Back to Orders</a>
     </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- Include Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

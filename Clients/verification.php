@@ -45,35 +45,35 @@ if (isset($_POST['valider'])) {
 <body>
   <?php include('navbar.php'); ?>
 
-  <div class="info-client">
-    <h2>INFORMATION</h2>
+  <div class="info-client" >
+    <h2 >INFORMATION</h2>
   </div>
 
-  <div class="verification" style="width: 50%">
+  <div class="verification" style="width: 70%" >
     <form class="row g-3" method="post">
       <div class="col-12">
-        <label for="inputAddress" class="form-label">Address mail</label>
+        <label for="inputAddress" class="form-label"></label>
         <input type="text" class="form-control" id="inputAddress" placeholder="Address mail" name="address_mail" required>
       </div>
       <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Nom</label>
-        <input type="text" class="form-control" id="inputEmail4" placeholder="Nom" name="nom" required>
+        <label for="inputEmail4" class="form-label"></label>
+        <input type="text" class="form-control" id="inputEmail4" placeholder="Name" name="nom" required>
       </div>
       <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Prenom</label>
-        <input type="text" class="form-control" id="inputPassword4" placeholder="Prenom" name="prenom" required>
+        <label for="inputPassword4" class="form-label"></label>
+        <input type="text" class="form-control" id="inputPassword4" placeholder="Family Name" name="prenom" required>
       </div>
       <div class="col-12">
-        <label for="inputAddress2" class="form-label">Address</label>
+        <label for="inputAddress2" class="form-label"></label>
         <input type="text" class="form-control" id="inputAddress2" placeholder="Address" name="address" required>
       </div>
       <div class="col-md-6">
-        <label for="inputCity" class="form-label">Ville</label>
-        <input type="text" class="form-control" id="inputCity" placeholder="Ville" name="ville" required>
+        <label for="inputCity" class="form-label"></label>
+        <input type="text" class="form-control" id="inputCity" placeholder="city" name="ville" required>
       </div>
       <div class="col-md-6">
-        <label for="inputNum" class="form-label">Num</label>
-        <input type="text" class="form-control" id="inputNum" placeholder="Num" name="num" required>
+        <label for="inputNum" class="form-label"></label>
+        <input type="text" class="form-control" id="inputNum" placeholder="Number" name="num" required>
       </div>
       <div class="col-12">
         <button type="submit" class="btn btn-primary" name="valider">Valider la commande</button>

@@ -14,7 +14,39 @@
     }else{
         $error[] = 'name or password incorrect!!';
     }
-  }
+
+
+    //login Admine
+
+if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
+    header("Location:/Admin/dashboard.php");
+    exit;
+}
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (!empty($_POST['username']) && !empty($_POST['password'])) {
+        $admin_username = 'admin';
+        $admin_password = '1234'; 
+        if ($_POST['username'] === $admin_username && $_POST['password'] === $admin_password) {
+            $_SESSION['admin_logged_in'] = true; 
+            header("Location: /Admin/dashboard.php"); 
+            exit;
+        } else {
+            $error_message = "Invalid username or password.";
+        }
+    } else {
+        $error_message = "Please enter both username and password.";
+    }
+ }
+
+
+
+
+
+
+}
+  
 
 
 ?>

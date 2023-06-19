@@ -8,9 +8,9 @@ if(isset($_POST['submit'])){
     $name = $_POST['username'];
     $email = $_POST['email'];
     $pass = md5($_POST['password']);
-    $cpass = md5($_POST['cpassword']);
-    $query = " INSERT INTO register(username, email, password, cpassword)
-    values ('$name', '$email', '$pass', '$cpass') ";
+   
+    $query = " INSERT INTO register(username, email, password)
+    values ('$name', '$email', '$pass') ";
     mysqli_query($conn , $query);
     header('location:welcome.php');
 

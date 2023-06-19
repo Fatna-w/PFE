@@ -36,6 +36,8 @@
                 <li><a href="chairs.php">Chairs</a></li>
                 <li><a href="lights.php">Lights</a></li>
                 <li><a href="acces.php">Acces</a></li>
+                <a href="Home.php"><button style="background-color: aliceblue; margin-right:-200px; width: 120px; font-size: 15px; border-radius: 15px; margin-top:30px; ">Deconnexion</button></a>
+
             </ul>
          </div>
 

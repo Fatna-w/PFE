@@ -15,7 +15,7 @@
         <nav class="bg-dark text-white position-fixed start-0 top-0 bottom-0" style="width: 300px;">
             <ul class="nav flex-column">
                 <li class="logo">
-                <img alt="" src="../Clients/images//logo site1.png" class=" mb-5 img-fluid" style="width: 200px; margin-left: 20px; margin-top: 30px; ">
+                <a href="dashboard.php"><img alt="" src="../Clients/images//logo site1.png" class=" mb-5 img-fluid" style="width: 200px; margin-left: 20px; margin-top: 30px; "></a>
                 </li>
                 <li class="nav-item ms-5">
                     <a class="nav-link text-white fs-5" href="product.php"><i class="fa fa-cube"></i> Products</a>

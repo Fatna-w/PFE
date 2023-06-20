@@ -2,17 +2,31 @@
 @include('connexion.php');
 
 if(isset($_POST['submit'])){
+    $email = $_POST['email'];
+    $pass = $_POST['nvpassword'];
+    $conPass = $_POST['cnvpassword'];
 
-    $email=$_POST['email'];
-    $pass=$_POST['nvpassword'];
-    $conPass=$_POST['cnvpassword'];
+    $req = "SELECT * FROM register WHERE email='$email'";
+    $result = mysqli_query($conn, $req);
 
-    $req="SELECT * FROM register WHERE email='$email'";
-    if($motPass=$conPass){
-        $con = mysqli_query($conn,"UPDATE register SET 'nvpassword'=$pass WHERE 'email'=$email");
-            header('location:welcome.php');
+    if(mysqli_num_rows($result) > 0){
+        if($pass == $conPass){
+            $updateQuery = "UPDATE register SET password='$pass' WHERE email='$email'";
+            $updateResult = mysqli_query($conn, $updateQuery);
+            
+            if($updateResult){
+                header('Location: welcome.php');
+                exit();
+            } else {
+                echo "Error updating password: " . mysqli_error($conn);
+            }
+        } else {
+            echo "Passwords do not match.";
         }
+    } else {
+        echo "User not found.";
     }
+}
 ?>
 
 

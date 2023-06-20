@@ -33,14 +33,13 @@
     <h1 style="color: #40492e;margin-left: 20px; border-bottom: #40492e solid 3px;width: 90%;padding-bottom: 20px; margin-bottom:50px;">Order Details</h1>
         <div style="background:#E6E5A3; width:60%; border-radius:15px; padding:30px;">
         <?php
-        // Establish a database connection
+     
         $host = "localhost";
         $name = "root";
         $pass = "";
         $db = "pfe";
         $conn = mysqli_connect($host, $name, $pass, $db);
 
-        // Retrieve the order_id parameter from the URL query string
         $order_id = $_GET['order_id'];
 
         // Fetch the order details from the database
@@ -70,11 +69,9 @@
             $total = $row['product_prix'] * $row['quantity'];
             echo "<p><strong>Total:</strong> $" . $total . "</p>";
         } else {
-            // No order found with the given order_id
             echo "<p>No order found with the provided ID.</p>";
         }
 
-        // Close the database connection
         mysqli_close($conn);
         ?>
 

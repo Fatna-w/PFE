@@ -80,6 +80,10 @@ if (isset($_POST['valider'])) {
       </div>
     </form>
   </div>
+  <div>
+    <br>
+    <h4 style="background-color:#d3d292; padding:20px;" align="center">payment on delivry</h4>
+  </div>
 
   <?php include_once('footer.php'); ?>
 </body>

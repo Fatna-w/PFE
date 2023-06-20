@@ -42,7 +42,6 @@
         <h1 style="color: #40492e;margin-left: 20px; border-bottom: #40492e solid 3px;width: 90%;padding-bottom: 20px; margin-bottom:50px;">Statistics</h1>
         <div class="row" >
             <?php
-            // Establish a database connection
             $host = "localhost";
             $name = "root";
             $pass = "";
@@ -52,29 +51,24 @@
                 die("Connection failed: " . $conn->connect_error);
             }
 
-            // Retrieve the number of orders
             $ordersQuery = "SELECT COUNT(*) AS total_orders FROM orders";
             $ordersResult = $conn->query($ordersQuery);
             $ordersRow = $ordersResult->fetch_assoc();
             $totalOrders = $ordersRow['total_orders'];
 
-            // Retrieve the number of clients
             $clientsQuery = "SELECT COUNT(*) AS total_clients FROM contactus";
             $clientsResult = $conn->query($clientsQuery);
             $clientsRow = $clientsResult->fetch_assoc();
             $totalClients = $clientsRow['total_clients'];
 
-            // Retrieve the number of products
             $productsQuery = "SELECT COUNT(*) AS total_products FROM products";
             $productsResult = $conn->query($productsQuery);
             $productsRow = $productsResult->fetch_assoc();
             $totalProducts = $productsRow['total_products'];
 
-            // Close the database connection
             $conn->close();
             ?>
 
-            <!-- Display the statistics using Bootstrap cards -->
             <div class="col-sm-4" st>
                 <div class="card bg-primary text-white">
                     <div class="card-body">

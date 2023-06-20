@@ -1,5 +1,5 @@
 <?php
-// Check if the form is submitted
+
 if (isset($_POST['submit'])) {
     // Get form data
     $name = $_POST['name'];
@@ -7,19 +7,18 @@ if (isset($_POST['submit'])) {
     $description = $_POST['description'];
     $price = $_POST['price'];
     $category = $_POST['category'];
-    
-    // Check if file is uploaded successfully
+   
     if (isset($_FILES['image']) && $_FILES['image']['error'] === UPLOAD_ERR_OK) {
         $image = $_FILES['image']['name'];
         $image_tmp = $_FILES['image']['tmp_name'];
 
-        // Directory where the image will be saved
+      
         $target_dir = "images/";
         $target_path = $target_dir . basename($image);
 
-        // Move the uploaded image to the target directory
+       
         if (move_uploaded_file($image_tmp, $target_path)) {
-            // Establish a database connection
+      
             $host = "localhost";
             $username = "root";
             $password = "";
@@ -30,26 +29,24 @@ if (isset($_POST['submit'])) {
                 die("Connection failed: " . mysqli_connect_error());
             }
 
-            // Prepare the INSERT query
+          
             $sql = "INSERT INTO products (name, title, description, prix, categorie, img) VALUES (?, ?, ?, ?, ?, ?)";
 
-            // Create a prepared statement
             $stmt = mysqli_prepare($conn, $sql);
 
-            // Bind the parameters with the form data
+         
             mysqli_stmt_bind_param($stmt, "ssssss", $name, $title, $description, $price, $category, $image);
 
-            // Execute the statement
+     
             $result = mysqli_stmt_execute($stmt);
 
-            // Check if the query was successful
+          
             if ($result) {
                 echo "<div class='mt-4 alert alert-success'>Product added successfully!</div>";
             } else {
                 echo "<div class='mt-4 alert alert-danger'>Failed to add product.</div>";
             }
 
-            // Close the statement and the database connection
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
         } else {

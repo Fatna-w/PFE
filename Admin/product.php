@@ -50,18 +50,15 @@
                 </thead>
                 <tbody>
                     <?php
-                    // Establish a database connection
                     $host = "localhost";
                     $name = "root";
                     $pass = "";
                     $db = "pfe";
                     $conn = mysqli_connect($host, $name, $pass, $db);
 
-                    // Fetch products from the database
                     $sql = "SELECT * FROM products";
                     $result = mysqli_query($conn, $sql);
 
-                    // Generate table rows dynamically
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo "<tr>";
                         echo "<td>" . $row['id'] . "</td>";
@@ -74,7 +71,6 @@
                         echo "</tr>";
                     }
 
-                    // Close the database connection
                     mysqli_close($conn);
                     ?>
                 </tbody>

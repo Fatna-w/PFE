@@ -44,21 +44,18 @@
                 </thead>
                 <tbody>
                     <?php
-                    // Establish a database connection
                     $host = "localhost";
                     $name = "root";
                     $pass = "";
                     $db = "pfe";
                     $conn = mysqli_connect($host, $name, $pass, $db);
 
-                    // Fetch orders and product names from the database
                     $sql = "SELECT o.id, o.nom, o.address, o.ville, o.num, p.title AS product_name, oi.quantity
                             FROM orders o
                             INNER JOIN order_items oi ON o.id = oi.order_id
                             INNER JOIN products p ON oi.product_id = p.id";
                     $result = mysqli_query($conn, $sql);
 
-                    // Generate table rows dynamically
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo "<tr>";
                         echo "<td>" . $row['nom'] . "</td>";
@@ -70,7 +67,6 @@
                         echo "</tr>";
                     }
 
-                    // Close the database connection
                     mysqli_close($conn);
                     ?>
                 </tbody>
